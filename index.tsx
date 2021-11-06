@@ -20,11 +20,12 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
-          Start editing to see some magic  
+          A is the wedge operator    
+          a A b  =  w 
           <table>
-            <tr> <td> ｜ a b ｜ </td></tr>
-            <tr> <td> ｜ &#8239; &#8239;  ｜ = w  </td></tr>   
-            <tr> <td> ｜ c d ｜</td></tr>
+            <tr> <td> ｜ a1 a2 ｜ </td></tr>
+            <tr> <td> ｜ &#8239; &#8239; &#8239;    ｜ = w  </td></tr>   
+            <tr> <td> ｜ b1 b2 ｜</td></tr>
           </table>
       </div>
     );
