@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Hello from './Hello'; 
 import './style.css';
 
 interface AppProps { }
@@ -20,13 +20,23 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
-          A is the wedge operator    
-          a A b  =  w 
-          <table>
-            <tr> <td> ｜ a1 a2 ｜ </td></tr>
-            <tr> <td> ｜ &#8239; &#8239; &#8239;    ｜ = w  </td></tr>   
-            <tr> <td> ｜ b1 b2 ｜</td></tr>
-          </table>
+          <pre> {` 
+            let a and b be vectors 
+            let ∧ be the wedge operator
+
+              a ∧ b = w 
+
+            | a1 a2 |   
+            |       | = w 
+            | b1 b2 |  
+
+            let a = (2,3)
+            and b = (1,2)
+            then 
+
+            w = 4 - 3 = e12  
+
+          `} </pre>
       </div>
     );
   }
