@@ -20,10 +20,12 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen 
-          
-        </p>
+          Start editing to see some magic  
+          <table>
+            <tr> <td> ｜ a b ｜ </td></tr>
+            <tr> <td> ｜ &#8239; &#8239;  ｜ = w  </td></tr>   
+            <tr> <td> ｜ c d ｜</td></tr>
+          </table>
       </div>
     );
   }
