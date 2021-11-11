@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello'; 
+import Counter from './Counter';
 import './style.css';
 
 interface AppProps { }
@@ -12,7 +13,8 @@ class App extends Component<AppProps, AppState> {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'React'
+      name: 'React',
+      count: 1
     };
   }
 
@@ -20,6 +22,7 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
+        <Counter count={this.state.count} /> 
           <pre> {` 
             let a and b be vectors 
             let ∧ be the wedge operator
