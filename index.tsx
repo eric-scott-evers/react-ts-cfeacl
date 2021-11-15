@@ -23,12 +23,13 @@ class App extends Component<AppProps, AppState> {
       <div>
         <Hello name={this.state.name} />
         <Counter count={this.state.count} /> 
+        <img src={'bar1.png'} /> 
           <pre> {` 
             let a and b be vectors 
             let ∧ be the wedge operator
 
               a ∧ b = w 
-
+            
             | a1 a2 |   
             |       | = w 
             | b1 b2 |  
