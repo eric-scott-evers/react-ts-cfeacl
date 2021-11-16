@@ -36,7 +36,7 @@ class App extends Component<AppProps, AppState> {
       <div>
         <Hello name={this.state.name} />
         <Counter count={this.state.count} />
-        <Toggle  
+        <Toggle  />
         {Form()}
           <pre> {` 
             let a and b be vectors 

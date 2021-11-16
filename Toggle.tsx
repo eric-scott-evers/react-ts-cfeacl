@@ -10,7 +10,7 @@ interface AppState {
 class Toggle extends Component {
   constructor(props) {
     super(props);
-    this.state = { isToggleOn: true}
+    this.state = { isToggleOn: true};
     this.handleClick = this.handleClick.bind(this);
   }
   // -- 
@@ -29,4 +29,4 @@ class Toggle extends Component {
   }
 }
 
-export default Counter;
+export default Toggle;
