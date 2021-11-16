@@ -15,9 +15,9 @@ class Toggle extends Component {
   }
   // -- 
   handleClick() {
-    this.setState(prevState) => ({
+    this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
-    });
+    }));
   }
   // -- 
   render() {
