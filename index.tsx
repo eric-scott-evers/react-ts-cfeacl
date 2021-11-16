@@ -9,6 +9,18 @@ interface AppState {
   name: string;
 }
 
+function Form(){
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log('You clicked submit.');
+  }
+  return (
+    <Form onSubmit={handleSubmit}>
+      <button type='submit'> Submit </button>
+    </Form>
+  )
+}
+
 class App extends Component<AppProps, AppState> {
   constructor(props) {
     super(props);
@@ -23,7 +35,7 @@ class App extends Component<AppProps, AppState> {
       <div>
         <Hello name={this.state.name} />
         <Counter count={this.state.count} /> 
-        <img src={'bar1.png'} /> 
+        {Form()}
           <pre> {` 
             let a and b be vectors 
             let ∧ be the wedge operator
