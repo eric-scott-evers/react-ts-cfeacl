@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello'; 
 import Counter from './Counter';
+import Toggle from './Toggle';
 import './style.css';
 
 interface AppProps { }
@@ -34,7 +35,8 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
-        <Counter count={this.state.count} /> 
+        <Counter count={this.state.count} />
+        <Toggle  
         {Form()}
           <pre> {` 
             let a and b be vectors 
