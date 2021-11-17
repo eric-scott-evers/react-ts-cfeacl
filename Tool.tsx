@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-function Tool() {
+function Tool(props) {
+  const dest = props.dest;
   return (
       <div>
-        <h1>Destination: unknown </h1> 
+        <h3>Destination: {dest} </h3> 
       </div>
   );
+}
+
+Tool.defaultProps = {
+  dest: "Home"
 }
 
 export default Tool;

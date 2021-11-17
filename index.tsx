@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello'; 
 import Counter from './Counter';
 import Tool from './Tool';
+import Example from './Example';
 
 // import Toggle from './Toggle';
 import './style.css';
@@ -39,7 +40,8 @@ class App extends Component<AppProps, AppState> {
         <Hello name={this.state.name} />
         <Counter count={this.state.count} />
         {Form()}
-        {Tool()}
+        <Example />
+        <Tool />
           <pre> {` 
             let a and b be vectors 
             let ∧ be the wedge operator
