@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello'; 
 import Counter from './Counter';
-import Too
+import Tool from './Tool';
+
 // import Toggle from './Toggle';
 import './style.css';
 
@@ -17,9 +18,9 @@ function Form(){
     console.log('You clicked submit.');
   }
   return (
-    <Form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <button type='submit'> Submit </button>
-    </Form>
+    </form>
   )
 }
 
