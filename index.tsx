@@ -37,6 +37,7 @@ class App extends Component<AppProps, AppState> {
         <Hello name={this.state.name} />
         <Counter count={this.state.count} />
         {Form()}
+        {Tool}
           <pre> {` 
             let a and b be vectors 
             let ∧ be the wedge operator
